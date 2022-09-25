@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyProductActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aMyProduct_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+
+            android:id="@+id/aMyProduct_imgBtnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/btn_circle_white"
+            android:src="@drawable/ic_back_24"
+            android:tint="@color/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+
+            android:id="@+id/aMyProduct_imgBtnAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/btn_circle_white"
+            android:src="@drawable/ic_add_24"
+            android:tint="@color/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm của tôi"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/arial_black"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aMyProduct_imgBtnBack"
+            app:layout_constraintStart_toEndOf="@+id/aMyProduct_imgBtnBack"
+            app:layout_constraintTop_toTopOf="@+id/aMyProduct_imgBtnBack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aMyProduct_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aMyProduct_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/back_ground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+    <TextView
+        android:id="@+id/aMyProduct_tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/arial_bold"
+        android:gravity="center"
+
+        android:text="Không có sản phẩm nào !"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view14"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

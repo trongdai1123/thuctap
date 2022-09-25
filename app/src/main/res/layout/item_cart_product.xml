@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingEnd="10dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/itemCart_checkBox"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+
+        android:buttonTint="@color/check_bot_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/itemCart_imgProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/product"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCart_checkBox"
+        app:layout_constraintStart_toEndOf="@+id/itemCart_checkBox"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_checkBox" />
+
+    <TextView
+        android:id="@+id/itemCart_tvNameProduct"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/arial_medium"
+        android:text="IPhone 12"
+        android:textColor="#403F3F"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/itemCart_imgProduct"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_imgProduct" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding= "2dp"
+        android:background="@drawable/border_textview"
+        android:text="đổi trả hàng trong vòng 7 ngày"
+        android:textColor="@color/main"
+        app:layout_constraintStart_toStartOf="@+id/itemCart_tvNameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/itemCart_tvNameProduct" />
+
+    <TextView
+        android:id="@+id/itemCart_tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_medium"
+        android:text="14.000 VND"
+        android:layout_marginTop="5dp"
+        android:textColor="#403F3F"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemCart_tvNameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/itemCart_tvPriceSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/arial_medium"
+        android:text="14.000 VND"
+        android:textColor="#403F3F"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/itemCart_tvPrice"
+        app:layout_constraintTop_toTopOf="@+id/itemCart_tvPrice" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/itemCart_imgGifSale"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/hot_sale"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias=".99"
+        app:layout_constraintTop_toBottomOf="@+id/itemCart_tvNameProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

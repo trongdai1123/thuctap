@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">@color/main</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    màu của dự án -->
+    <color name="main">#ED4D2D</color>
+    <color name="main_text">#1F1F1F</color>
+    <color name="second_text">#909090</color>
+    <color name="thrice_text">#CBC1BF</color>
+    <color name="status_false">#DB3434</color>
+    <color name="status_true">#4CA091</color>
+    <color name="back_ground">#F2F2F2</color>
+    <color name="line_form">#EBF0FF</color>
+    <color name="hint">#9098B1</color>
+    <color name="line">#F0F0F0</color>
+    <color name="icon_second">#B3B3C3</color>
+    <color name="back_ground_notification">#FFF5F3</color>
+</resources>

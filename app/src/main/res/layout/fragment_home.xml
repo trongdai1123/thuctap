@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_ground"
+    android:scrollbars="none"
+
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fHome_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/arial_bold"
+        android:text="Chọn danh mục"
+        android:textColor="@color/main_text"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".04" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnCart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_cart"
+        app:layout_constraintBottom_toBottomOf="@+id/fHome_tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fHome_tvTitle" />
+
+    <TextView
+        android:id="@+id/fHome_tvInfoCart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/back_ground_info"
+        android:gravity="center"
+        android:text="1"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintHorizontal_bias=".7"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/fHome_btnCart"
+        app:layout_constraintEnd_toEndOf="@+id/fHome_btnCart"
+        app:layout_constraintStart_toStartOf="@+id/fHome_btnCart"
+        app:layout_constraintTop_toTopOf="@+id/fHome_btnCart" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnPhone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_circle_white_stroke"
+        android:layout_marginTop="20dp"
+        app:layout_constraintVertical_bias=".05"
+        android:src="@drawable/ic_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_tvTitle" />
+
+    <TextView
+        android:id="@+id/fHome_tvNamePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điên thoại"
+        android:fontFamily="@font/arial_bold"
+        android:textColor="@color/icon_second"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/fHome_btnPhone"
+        app:layout_constraintStart_toStartOf="@+id/fHome_btnPhone"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_btnPhone" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnLaptop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_circle_white_stroke"
+        android:src="@drawable/ic_baseline_laptop_24"
+        app:layout_constraintEnd_toStartOf="@+id/fHome_btnWatch"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintStart_toEndOf="@+id/fHome_btnPhone"
+        app:layout_constraintTop_toTopOf="@+id/fHome_btnPhone" />
+
+    <TextView
+        android:id="@+id/fHome_tvNameLaptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_bold"
+        android:textColor="@color/icon_second"
+        android:layout_marginTop="8dp"
+        android:text="Laptop"
+        app:layout_constraintEnd_toEndOf="@+id/fHome_btnLaptop"
+        app:layout_constraintStart_toStartOf="@+id/fHome_btnLaptop"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_btnPhone" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnHeadPhone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_circle_white_stroke"
+        android:src="@drawable/ic_baseline_headset_24"
+        app:layout_constraintEnd_toStartOf="@+id/fHome_btnWatch"
+        app:layout_constraintHorizontal_bias=".8"
+        app:layout_constraintStart_toEndOf="@+id/fHome_btnPhone"
+        app:layout_constraintTop_toTopOf="@+id/fHome_btnLaptop" />
+
+    <TextView
+        android:id="@+id/fHome_tvHeadPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_bold"
+        android:text="Tai nghe"
+        android:textColor="@color/icon_second"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/fHome_btnHeadPhone"
+        app:layout_constraintStart_toStartOf="@+id/fHome_btnHeadPhone"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_btnHeadPhone" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnWatch"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_circle_white_stroke"
+        android:src="@drawable/ic_baseline_watch_24"
+        app:layout_constraintBottom_toBottomOf="@+id/fHome_btnPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fHome_btnPhone"
+        app:layout_constraintVertical_bias=".05" />
+
+    <TextView
+        android:id="@+id/fHome_tvWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial_bold"
+        android:textColor="@color/icon_second"
+        android:text="Đồng hồ"
+        app:layout_constraintEnd_toEndOf="@+id/fHome_btnWatch"
+        app:layout_constraintStart_toStartOf="@+id/fHome_btnWatch"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_btnPhone" />
+
+    <EditText
+        android:id="@+id/fHome_edSearch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/form_style_login"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="Tìm kiếm"
+        android:paddingStart="20dp"
+        android:textColor="@color/main_text"
+        android:textColorHint="@color/hint"
+        android:textCursorDrawable="@drawable/cursor_style"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/fHome_btnWatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_tvNameLaptop" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fHome_btnFilter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_circle"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@+id/fHome_edSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fHome_edSearch"
+        app:layout_constraintTop_toTopOf="@+id/fHome_edSearch" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/fHome_imgBanner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/banner3"
+        app:riv_corner_radius="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_edSearch" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/arial_black"
+        android:text="Hot sale"
+        android:textColor="@color/status_false"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/fHome_imgBanner"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_imgBanner" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/hot_sale"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/fHome_tvDetailsSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_medium"
+        android:text="Chi tiết"
+        app:layout_constraintVertical_bias=".9"
+        android:textColor="@color/main"
+
+        app:layout_constraintBottom_toTopOf="@+id/fHome_recycleViewSaleProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_imgBanner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fHome_recycleViewSaleProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+    <TextView
+        android:id="@+id/tvSuggest"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:fontFamily="@font/arial_black"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="GỢI Ý HÔM NAY"
+        android:textColor="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fHome_recycleViewSaleProduct" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fHome_recycleViewSuggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

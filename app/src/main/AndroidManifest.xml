@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mthshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MTHShop"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.InputRateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VerifyBillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddMyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditMyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyBillsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangeInfoAccount"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BuyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailsProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HeadPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailsMeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SayHiActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="CLOUDINARY_URL=cloudinary://467642843646499:_Y5A0dT57bsF0vjHYqWmEERcC6M@dr7hoxpif/res.cloudinary.com" />
+    </application>
+
+</manifest>

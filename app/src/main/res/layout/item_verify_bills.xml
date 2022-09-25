@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_me_main"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".02"
+        app:tint="@color/icon_second" />
+
+    <TextView
+        android:id="@+id/itemVerifyMyProduct_tvOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/arial_black"
+        android:text="TanHao"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/itemVerifyMyProduct_tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_black"
+        android:text="Đánh giá"
+        android:textColor="@color/main"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".95"
+
+        app:layout_constraintStart_toEndOf="@+id/itemVerifyMyProduct_tvOwner"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/itemVerifyMyProduct_imgProduct"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/itemVerifyMyProduct_tvOwner" />
+
+    <TextView
+        android:id="@+id/itemVerifyMyProduct_tvNameProduct"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/main_text"
+        android:textSize="14sp"
+        android:fontFamily="@font/arial_medium"
+        android:layout_height="wrap_content"
+        android:text="Apple watch 2022 4mm"
+        app:layout_constraintStart_toEndOf="@+id/itemVerifyMyProduct_imgProduct"
+        app:layout_constraintTop_toTopOf="@+id/itemVerifyMyProduct_imgProduct" />
+
+    <TextView
+        android:id="@+id/itemVerifyMyProduct_tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_medium"
+        android:text="Đồng hồ"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/second_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/itemVerifyMyProduct_tvNameProduct"
+        app:layout_constraintTop_toBottomOf="@+id/itemVerifyMyProduct_tvNameProduct" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemVerifyMyProduct_tvOwner" />
+
+    <TextView
+        android:id="@+id/itemVerifyMyProduct_tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/arial_medium"
+        android:text="đ96.500"
+        android:textColor="@color/main"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemVerifyMyProduct_imgProduct" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemVerifyMyProduct_tvPrice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/itemVerifyMyProduct_btnEdit"
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/arial_medium"
+        android:background="@drawable/btn_style_login"
+        android:text="Chỉnh sữa"
+        android:textSize="11sp"
+        android:layout_marginRight="10dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/itemVerifyMyProduct_btnDelete"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn__delete"
+        android:fontFamily="@font/arial_medium"
+        android:text="Xóa"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemVerifyMyProduct_btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

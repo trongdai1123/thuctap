@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    tools:context=".activities.ChangeInfoAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/aChangeInfo_btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_circle_white"
+            android:src="@drawable/ic_back_24"
+            android:tint="@color/main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/aChaneInfo_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/arial_extra_bold"
+            android:text="Sửa tên"
+
+            android:textColor="@color/main_text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aChangeInfo_btnBack"
+            app:layout_constraintStart_toEndOf="@+id/aChangeInfo_btnBack"
+            app:layout_constraintTop_toTopOf="@+id/aChangeInfo_btnBack" />
+
+        <TextView
+            android:id="@+id/aChangeInfo_tvSave"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/arial_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="LƯU"
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/aChangeInfo_edInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:text="fdsaf"
+        android:maxLength="40"
+        android:textCursorDrawable="@drawable/cursor_style"
+        android:background="@drawable/form_style_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Tối đa 40 ký tự"
+        android:textColor="@color/second_text"
+        android:fontFamily="@font/arial_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aChangeInfo_edInput" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

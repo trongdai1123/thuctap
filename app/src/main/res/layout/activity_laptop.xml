@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_ground"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+
+        android:id="@+id/fLaptop_imgBtnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_back_24"
+        android:tint="@color/main"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fLaptop_edSearch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/form_style_login"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Tìm kiếm"
+        android:paddingStart="20dp"
+        android:textColor="@color/main_text"
+        android:textColorHint="@color/hint"
+        android:textCursorDrawable="@drawable/cursor_style"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fLaptop_imgBtnBack"
+        app:layout_constraintEnd_toStartOf="@+id/fLaptop_imgBtnFilter"
+        app:layout_constraintStart_toEndOf="@+id/fLaptop_imgBtnBack"
+        app:layout_constraintTop_toTopOf="@+id/fLaptop_imgBtnBack"
+        app:layout_constraintWidth_percent=".78" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fLaptop_imgBtnFilter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_circle"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@+id/fLaptop_edSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fLaptop_edSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fLaptop_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fLaptop_edSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

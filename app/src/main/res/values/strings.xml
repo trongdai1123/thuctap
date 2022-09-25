@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MTH Shop</string>
+    <string name="login_sign_up">Bạn không có tài khoản? <font color="#ED4D2D">Đăng ký</font></string>
+    <string name="signUp_sign_in">Bạn đã có tài khoản? <font color="#ED4D2D">Đăng nhập</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_head_phone">HeadPhoneActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="description">iP 6 hiện đang được bán tại HD shop với giá chỉ từ 1tr6\n iP6 là đời máy đầu tiên được Apple nâng cấp từ màn hình bé 4 inch lên màn hình to 4,7 inch. Đây cũng chính là yếu tố giúp i 6 đón nhận sự ủng hộ nhiệt tình của người dùng. Đến giờ, iPhone 6 cũ vẫn là một trong những dòng máy bán chạy nhất\n Cấu hình máy như sau\n Cấu hình Điện thoại i Phone 6 16GB\n \nMàn hình:LED-backlit IPS LCD4.7Retina HD \nHệ điều hành:i.OS 12 \nCamera sau:8 MP \nCamera trước:1.2 MP \nChip: A8 \nRAM:1 GB \nBộ nhớ trong:32 GB \nSIM:1 Nano SIM \nPin, Sạc:1810 mAh \nSản phẩm shop phân phối là máy cũ qua sử dụng, chất lượng còn đảm bảo \nmáy hiện tại phụ vu tốt các nhu cầu cơ bản về liên lac, sử dụng mạng xã hội và các game nhẹ nhàng\n \nBảo hành \nSản phẩm bảo hành 6 tháng \nPhụ kiện \ntặng kèm \n+ cáp sạc , củ sạc loại tốt \n+ ốp lưng BVC xịn \nChi tiết liên hệ shop</string>
+</resources>

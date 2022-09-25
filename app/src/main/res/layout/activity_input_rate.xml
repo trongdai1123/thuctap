@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InputRateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view12"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/aInputRate_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_circle_white"
+            android:src="@drawable/ic_back_24"
+            android:tint="@color/main"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial_bold"
+            android:text="Đánnh giá"
+            android:textColor="@color/main_text"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/aInputRate_back"
+            app:layout_constraintStart_toEndOf="@+id/aInputRate_back"
+            app:layout_constraintTop_toTopOf="@+id/aInputRate_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent=".9"
+        android:layout_height="50dp"
+        android:background="@color/back_ground"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12">
+
+        <ImageView
+            android:id="@+id/aInputRate_imgProduct"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left"
+            android:src="@drawable/product" />
+
+        <TextView
+            android:id="@+id/aInputRate_tvNameProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Iphone 12"
+            android:textColor="@color/main_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/aInputRate_rating"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:progressTint="#FFCC01"
+        android:isIndicator="false"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout12"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+    <EditText
+        android:id="@+id/aInputRate_edContent"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_style_login"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:hint="Nhập nội dung đánh giá có thể bỏ trống"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout12"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/aInputRate_rating" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/aInput_btnOk"
+        android:text="Đánh giá"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/aInputRate_edContent"
+        app:layout_constraintStart_toStartOf="@+id/aInputRate_edContent"
+        app:layout_constraintTop_toBottomOf="@+id/aInputRate_edContent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

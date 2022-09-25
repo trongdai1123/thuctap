@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemRateDetails_imgAvatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/user_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".04"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias=".02" />
+
+    <TextView
+        android:id="@+id/itemRateDetails_tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uer1"
+        android:layout_marginLeft="14dp"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/itemRateDetails_imgAvatar"
+        app:layout_constraintStart_toEndOf="@+id/itemRateDetails_imgAvatar"
+        app:layout_constraintTop_toTopOf="@+id/itemRateDetails_imgAvatar" />
+
+    <RatingBar
+        android:id="@+id/itemRateDetails_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:progressTint="#FFCC01"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toEndOf="@+id/itemRateDetails_imgAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/itemRateDetails_tvUser" />
+
+    <TextView
+        android:id="@+id/itemRateDetails_tvContent"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Sản phẩm tuyệt vời lắm !!"
+        android:lineHeight="25dp"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/arial_medium"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toStartOf="@+id/itemRateDetails_tvUser"
+        app:layout_constraintTop_toBottomOf="@+id/itemRateDetails_rating" />
+
+    <TextView
+        android:id="@+id/itemRateDetails_tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14-05-2000"
+        android:textSize="14sp"
+        android:fontFamily="@font/arial_medium"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/second_text"
+        app:layout_constraintStart_toStartOf="@+id/itemRateDetails_tvContent"
+        app:layout_constraintTop_toBottomOf="@+id/itemRateDetails_tvContent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_medium"
+        android:text="  |  "
+        android:textColor="@color/second_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemRateDetails_tvDate"
+        app:layout_constraintStart_toEndOf="@+id/itemRateDetails_tvDate"
+        app:layout_constraintTop_toTopOf="@+id/itemRateDetails_tvDate" />
+
+    <TextView
+        android:id="@+id/itemRateDetails_tvNameColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_medium"
+        android:text="Iphone 12"
+        android:textColor="@color/second_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/back_ground"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemRateDetails_tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/itemRateDetails_tvNameColor">
+
+        <ImageView
+            android:id="@+id/itemRateDetails_imgProduct"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left"
+            android:src="@drawable/product" />
+
+        <TextView
+            android:id="@+id/itemRateDetails_tvNameProduct"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Iphone 12"
+            android:textColor="@color/main_text"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/itemRateDetails_btnRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style_login"
+        android:text="Đánh giá"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout12"
+        app:layout_constraintTop_toTopOf="@+id/itemRateDetails_tvUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

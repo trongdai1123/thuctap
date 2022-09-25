@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+
+            android:id="@+id/fDetailsProduct_btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_circle_white"
+            android:src="@drawable/ic_back_24"
+            android:tint="@color/main"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fDetailsProduct_btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="7"
+            android:background="@drawable/form_style_login"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Tìm kiếm"
+            android:paddingStart="20dp"
+            android:textColor="@color/main_text"
+            android:textColorHint="@color/hint"
+            android:textCursorDrawable="@drawable/cursor_style"
+            android:textSize="14sp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/fDetailsProduct_btnCart"
+                android:layout_width="60dp"
+                android:layout_height="78dp"
+                android:background="@drawable/btn_circle_white"
+                android:src="@drawable/ic_cart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fDetailsProduct_tvInfoCart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/back_ground_info"
+                android:gravity="center"
+                android:text="1"
+                app:layout_constraintVertical_bias=".3"
+                app:layout_constraintHorizontal_bias=".8"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/fDetailsProduct_btnCart"
+                app:layout_constraintEnd_toEndOf="@+id/fDetailsProduct_btnCart"
+                app:layout_constraintStart_toStartOf="@+id/fDetailsProduct_btnCart"
+                app:layout_constraintTop_toTopOf="@+id/fDetailsProduct_btnCart" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <FrameLayout
+        android:id="@+id/fDetailsProduct_frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/gsdfg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <View
+        android:id="@+id/gsdfg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:id="@+id/fDetailsProduct_lnChat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/fDetailsProduct_btnChat"
+                android:layout_width="50dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="8dp"
+
+                android:src="@drawable/ic_chat_product"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat ngay"
+
+                android:fontFamily="@font/arial_medium"
+                android:textColor="@color/main_text"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line"/>
+        <LinearLayout
+            android:id="@+id/fDetailsProduct_lnCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/fDetailsProduct_btnCartBottom"
+                android:layout_width="50dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_cart_product"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm vào giỏ hàng"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arial_medium"
+                android:textColor="@color/main_text"
+                android:textSize="10sp"/>
+        </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:id="@+id/fDetailsProduct_btnBuyNow"
+                android:text="Mua ngay"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

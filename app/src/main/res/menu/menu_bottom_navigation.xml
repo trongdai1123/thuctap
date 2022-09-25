@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mBN_home"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home_main"
+        />
+    <item
+        android:id="@+id/mBN_chat"
+        android:title="Nhắn tin"
+        android:icon="@drawable/ic_chat_second"/>
+    <item
+        android:id="@+id/mBN_notification"
+        android:title="Thông báo"
+        android:icon="@drawable/ic_bell_second"/>
+    <item
+        android:id="@+id/mBN_me"
+        android:title="Tôi"
+        android:icon="@drawable/ic_me_second"/>
+</menu>

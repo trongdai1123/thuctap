@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    tools:context=".activities.DetailsMeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+
+        android:id="@+id/aDetailsMe_imgBtnSave"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_check_24"
+        android:tint="@color/main"
+        app:layout_constraintBottom_toBottomOf="@+id/aDetailsMe_imgBtnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aDetailsMe_imgBtnBack" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+
+        android:id="@+id/aDetailsMe_imgBtnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_back_24"
+        android:tint="@color/main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/arial_extra_bold"
+        android:text="Sữa thông tin"
+        android:textColor="@color/main_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/aDetailsMe_imgBtnBack"
+        app:layout_constraintStart_toEndOf="@+id/aDetailsMe_imgBtnBack"
+        app:layout_constraintTop_toTopOf="@+id/aDetailsMe_imgBtnBack" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/aDetailsMe_imgAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_avatar"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+            android:background="#43000000"
+
+            android:gravity="center"
+            android:text="Chạm để thay đổi"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:textSize="15sp"
+            android:textColor="@color/main_text"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="Đại"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Tên đăng nhập"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/arial_medium"
+            android:text="trongdai151001"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnBio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnUser">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Địa chỉ"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="837/9 Quang Trung"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnSex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnBio">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Giới tính"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="Nam"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnYOB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnSex">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Ngày sinh"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvYOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="15/10/2001"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnNumberPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnYOB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Số điện thoại"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvNumberPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="0865658544"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aDetailsMe_lnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_style_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDetailsMe_lnYOB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/arial_medium"
+            android:text="Email"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aDetailsMe_tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arial_medium"
+            android:text="hoanggtronggdaii@gmail.com"
+            android:textColor="@color/main_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next_edit" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
